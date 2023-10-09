@@ -1,0 +1,72 @@
+/* ----- main contacto ----- */
+
+.form {
+    width: 400px;
+    padding: 50px;
+    margin: 50px auto 90px;
+
+    border-radius: 30px;
+    box-shadow: $shadow-1;
+
+    &__titulo {
+        margin: 45px auto 0px;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+
+        font-size: 0.813rem;
+    }
+
+    &__textarea {
+        width: 100%;
+        padding: 10px;
+
+        font-size: 0.813rem;
+        border: 2px solid black;
+        resize: none;
+    }
+
+    &__submit {
+        padding: 7px;
+        border-radius: 10px;
+        margin-top: 8px;
+        background-color: $color-light-brown;
+        box-shadow: $shadow-1;
+
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            background-color: $color-brown;
+            transition: 1s;
+        }
+    }
+}
+
+/* ----- Media Queries Mobile ----- */
+
+@media screen and (min-width: 320px) {
+
+    .form {
+        width: 300px;
+        padding: 40px;
+    }
+
+}
+
+/* ----- Media Queries Desktop ----- */
+
+@media screen and (min-width: 1024px) {
+
+    .form {
+        width: 400px;
+        padding: 50px;
+    }
+
+}

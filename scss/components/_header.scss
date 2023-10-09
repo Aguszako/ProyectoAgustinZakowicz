@@ -1,0 +1,57 @@
+/* ----- header ----- */
+
+header {
+    background-color: $color-base;
+    padding: 22px;
+    width: 90%;
+    margin: 0px auto 40px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: $shadow-1;
+}
+
+.nav {
+    padding: 0;
+
+    &__div {
+        @include flexbox(space-between);
+    }
+
+    &__lista {
+        @include flexbox(left, center, column);
+        gap: 30px;
+
+        & a:hover {
+            color: rgb(194, 172, 149);
+            transition: 0.5s;
+        }
+    }
+
+    &__boton {
+        @extend %btn;
+
+        &:hover {
+            @extend %btn--hover;
+        }
+    }
+}
+
+/* ----- Media Queries Mobile ----- */
+
+@media screen and (min-width: 320px) {
+
+    header {
+        margin: 0px auto 15px;
+        box-shadow: 1px 1px 10px 5px rgb(146, 146, 146);
+    }
+
+}
+
+/* ----- Media Queries Desktop ----- */
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        margin: 0px auto 15px;
+    }
+
+}

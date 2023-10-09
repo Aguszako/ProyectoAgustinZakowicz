@@ -1,0 +1,105 @@
+/* ----- main index ----- */
+
+.sobremi {
+    display: flex;
+    width: 60%;
+    margin: 100px auto 100px;
+
+    &__img {
+        width: 500px;
+        height: 600px;
+        margin: 40px;
+        border-radius: 30px;
+        box-shadow: $shadow-1;
+    }
+
+    &__datos {
+        @include flexbox($direction: column);
+        margin: 20px 0px 20px;
+
+        & h2 {
+            font-family: 'Anton', sans-serif;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        & h1 {
+            font-size: 1.875rem;
+            color: black;
+        }
+
+        & p {
+            margin-bottom: 25px;
+            color: black;
+            text-align: center;
+        }
+    }
+
+    &__boton {
+        @extend %btn;
+
+        &:hover {
+            @extend %btn--hover;
+        }
+    }
+}
+
+/* ----- Media Queries Mobile ----- */
+
+@media screen and (min-width: 320px) {
+
+    .sobremi {
+        @include flexbox($direction: column);
+        width: 80%;
+        margin: 0px auto 15px;
+
+        &__img {
+            width: 200px;
+            height: 260px;
+            margin: 20px 20px 30px;
+        }
+
+        &__datos {
+            & h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            & h1 {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+
+            & p {
+                color: black;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ----- Media Queries Desktop ----- */
+
+@media screen and (min-width: 1024px) {
+
+    .sobremi {
+        flex-direction: row;
+        margin: 160px auto 160px;
+
+        &__img {
+            width: 400px;
+            height: 500px;
+            margin: 40px;
+        }
+
+        &__datos {
+            & h2 {
+                font-size: 2.5rem;
+            }
+
+            & h1 {
+                font-size: 1.875rem;
+            }
+        }
+    }
+}

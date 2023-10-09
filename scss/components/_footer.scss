@@ -1,0 +1,56 @@
+/* ----- Footer ----- */
+
+.footer {
+    background-color: $color-base;
+    padding: 25px;
+    margin-top: 40px;
+    box-shadow: -5px -5px 20px 5px rgb(146, 146, 146);
+
+    @include flexbox(space-around);
+
+    &__contacto {
+        font-size: 2.188rem;
+
+        & i {
+            margin: 0px 20px 0px 20px;
+
+            &:hover {
+                color: $color-brown;
+                transition: 1s;
+            }
+        }
+    }
+
+    &__copyright h3 {
+        color: black;
+        font-size: 0.813rem;
+        margin-top: 8px;
+    }
+
+}
+
+/* ----- Media Queries Mobile ----- */
+
+@media screen and (min-width: 320px) {
+
+    .footer {
+        box-shadow: -5px -5px 10px 5px rgb(146, 146, 146);
+
+        @include flexbox($direction: column);
+
+        & h3 {
+            text-align: center;
+        }
+    }
+
+}
+
+/* ----- Media Queries Desktop ----- */
+
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        @include flexbox(space-around);
+    }
+
+}
