@@ -481,7 +481,7 @@ header {
 }
 .servicios__article {
   width: 250px;
-  height: 450px;
+  height: 350px;
   margin: 0px 40px 10px;
   padding: 20px;
   text-align: center;
@@ -491,6 +491,16 @@ header {
 .servicios__article h2 {
   font-family: "Anton", sans-serif;
   margin-bottom: 20px;
+}
+.servicios__article h6 {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.servicios__article p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  
 }
 
 /* ----- Media Queries Mobile ----- */
@@ -503,7 +513,7 @@ header {
   }
   .servicios__article {
     width: 250px;
-    height: 450px;
+    height: 550px;
     margin: 0px auto 60px;
     padding: 20px;
   }
@@ -518,7 +528,7 @@ header {
   }
   .servicios__article {
     width: 250px;
-    height: 450px;
+    height: 828px;
     margin: 40px 40px;
     padding: 20px;
   }

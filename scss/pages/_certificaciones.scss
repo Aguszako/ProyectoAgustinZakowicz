@@ -1,42 +1,37 @@
 /* ----- main certificaciones ----- */
 
-.certificaciones {
-    width: 80%;
-    margin: 0px auto;
+.servicios {
+    @include flexbox();
 
-    & h1 {
+    &__titulo {
         font-family: 'Anton', sans-serif;
-        margin: 50px 0px 20px;
-    }
-
-    & h2 {
-        font-family: 'Anton', sans-serif;
-        margin-top: 30px;
-    }
-    & h6 {
-        font-family: 'Anton', sans-serif;
-        margin-top: 30px;
-        font-weight: bold;
-    }
-
-    & img {
-        width: 600px;
-        height: 500px;
-        margin: 30px 50px 50px 50px;
-    }
-
-    &__intro {
         text-align: center;
+        margin: 40px auto 50px;
     }
 
-    &__coderhouse {
-        text-align: center;
-    }
+    &__article {
+        width: 250px;
+        height: 350px;
+        margin: 0px 40px 10px;
+        padding: 20px;
 
-    &__udemy {
         text-align: center;
+
+        border-radius: 30px;
+        box-shadow: $shadow-1;
+
+        & h2 {
+            font-family: 'Anton', sans-serif;
+            margin-bottom: 20px;
+        }
+        & h6 {
+            font-family: 'Anton', sans-serif;
+            margin-top: 30px;
+            font-weight: bold;
+        }
     }
 }
+
 
 /* ----- Media Queries Mobile ----- */
 
